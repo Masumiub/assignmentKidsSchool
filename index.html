@@ -251,10 +251,14 @@
         .sliderButtonContainer button {
             color: #ffffff;
             font-size: 20px;
-            padding: 10px 15px 10px 15px;
+            padding: 10px 18px 10px 18px;
             background-color: #FEA301;
             border-radius: 50%;
             border: none;
+        }
+
+        .prevBtn:hover, .nextBtn:hover{
+            background-color: #01ACFD;
         }
 
         .stories {
@@ -565,6 +569,74 @@
                 width: 100%;
             }
         }
+
+        @media screen and (min-width:769px) and (max-width:992px) {
+            nav {
+                border-bottom: 1px solid #FEA301;
+                padding: 0px 10px 0px 10px;
+            }
+
+            .navigation {
+                margin: 0px;
+                width: 100%;
+            }
+
+            .navigation .logoText,
+            .homeLink,
+            .aboutLink,
+            .facilitiesLink,
+            .admissionLink,
+            .contactLink {
+                display: none;
+            }
+
+            .hamburger {
+                display: inline;
+                padding-right: 10px;
+            }
+
+            .aboveTheFold{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .aboveTheFold .row{
+                width: 100%;
+            }
+
+            .mainHeading {
+                font-size: 46px;
+                line-height: 61px;
+            }
+
+            .curriculum .row{
+                align-items: stretch;
+            }
+
+            .stories{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .stories .row{
+                width: 100%;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .stories .row .rightside{
+                width: 100%;
+                gap: 10px;
+            }
+
+            footer{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            footer .row{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -650,9 +722,8 @@
 
             <div class="sliderButtonContainer">
                 <div>
-                    <button>
-                        < </button>
-                            <button> > </button>
+                    <button class="prevBtn quicksand-bold"> < </button>
+                    <button class="nextBtn quicksand-bold"> > </button>
                 </div>
             </div>
 
