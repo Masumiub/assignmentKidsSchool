@@ -51,6 +51,7 @@
         }
 
         .logoText {
+            color: #000000;
             font-size: 32px;
             padding-left: 11px;
         }
@@ -363,7 +364,7 @@
             margin-bottom: 32px;
         }
 
-        .footerDetails ul{
+        .footerDetails ul {
             list-style: none;
             display: flex;
             align-items: center;
@@ -372,7 +373,7 @@
         }
 
 
-        .footerDetails ul li a{
+        .footerDetails ul li a {
             color: #ffffff;
             text-decoration: none;
         }
@@ -486,18 +487,84 @@
             }
 
             footer {
-            padding-left: 15px;
-            padding-right: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .row .footerDetails,
+            .footerNav,
+            .socialMedia {
+                width: 100%;
+            }
         }
 
-        .row .footerDetails,
-        .footerNav,
-        .socialMedia {
-            width: 100%;
-        }
-        }
+        @media screen and (min-width:577px) and (max-width:768px) {
+            nav {
+                border-bottom: 1px solid #FEA301;
+                padding: 0px 10px 0px 10px;
+            }
 
+            .navigation {
+                margin: 0px;
+                width: 100%;
+            }
 
+            .navigation .logoText,
+            .homeLink,
+            .aboutLink,
+            .facilitiesLink,
+            .admissionLink,
+            .contactLink {
+                display: none;
+            }
+
+            .hamburger {
+                display: inline;
+                padding-right: 10px;
+            }
+
+            .aboveTheFold{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .aboveTheFold .row{
+                width: 100%;
+            }
+
+            .mainHeading {
+                font-size: 46px;
+                line-height: 61px;
+            }
+
+            .curriculum .row{
+                align-items: stretch;
+            }
+
+            .stories{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .stories .row{
+                width: 100%;
+                gap: 10px;
+                align-items: stretch;
+            }
+
+            .stories .row .rightside{
+                width: 100%;
+                gap: 10px;
+            }
+
+            footer{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            footer .row{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
