@@ -256,6 +256,10 @@
             border: none;
         }
 
+        .stories {
+            background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+        }
+
         .storyCard {
             display: flex;
             flex-direction: column;
@@ -288,7 +292,7 @@
 
 
         .storyContentContainer p {
-            margin-top: 50px;
+            margin-top: 30px;
             color: #666666;
             font-size: 15px;
             line-height: 28px;
@@ -303,7 +307,8 @@
 
         .stories .row {
             gap: 20px;
-            align-items: stretch;
+            align-items: center;
+            padding-bottom: 90px;
         }
 
         .stories .row .leftside {
@@ -319,6 +324,57 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+        }
+
+        .btnContainer {
+            text-align: center;
+            padding-bottom: 60px;
+        }
+
+        footer {
+            background-color: #01ACFD;
+        }
+
+        footer .row {
+            align-items: start;
+            justify-content: space-between;
+            gap: 140px;
+            padding-top: 120px;
+            padding-bottom: 170px;
+        }
+
+        .row .footerDetails,
+        .footerNav,
+        .socialMedia {
+            width: 33.3%;
+            color: #ffffff;
+        }
+
+        .footerNav ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        .footerNav ul li {
+            margin-bottom: 10px;
+        }
+
+        footer h2 {
+            margin-bottom: 32px;
+        }
+
+        .footerDetails ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding-left: 0px;
+            margin-bottom: 20px;
+        }
+
+
+        .footerDetails ul li a{
+            color: #ffffff;
+            text-decoration: none;
         }
 
 
@@ -358,14 +414,18 @@
                 width: 100%;
             }
 
+            .aboveTheFold .leftside {
+                width: 100%;
+            }
+
             .mainHeading {
                 font-size: 32px;
                 line-height: 40px;
             }
 
             .curriculum {
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
 
             .curriculum .row {
@@ -380,6 +440,16 @@
                 display: none;
             }
 
+            .stories {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .stories .row {
+                margin: 0 auto;
+                width: 100%;
+            }
+
             .stories .row .leftside {
                 display: none;
             }
@@ -387,9 +457,44 @@
             .stories .row .rightside {
                 width: 100%;
                 display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
             }
+
+            .storyContentContainer {
+                margin-top: -4px;
+                background-color: #ffffff;
+                border-radius: 0px 0px 16px 16px;
+                padding: 17px 17px 17px 17px;
+            }
+
+            .storyContentContainer h3 {
+                margin-top: 15px;
+                font-size: 9px;
+                line-height: 15px;
+            }
+
+            .storyContentContainer .btn {
+                margin-top: -30px;
+                font-size: 9px;
+            }
+
+            footer .row {
+                flex-direction: column;
+                width: 100%;
+                gap: 32px;
+            }
+        }
+
+        footer {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .row .footerDetails,
+        .footerNav,
+        .socialMedia {
+            width: 100%;
         }
     </style>
 </head>
@@ -555,11 +660,45 @@
 
                 </div>
             </div>
+            <div class="btnContainer">
+                <button class="btn quicksand-bold">View All</button>
+            </div>
         </section>
     </main>
 
     <footer>
+        <div class="row">
+            <div class="footerDetails">
+                <div>
+                    <ul>
+                        <li> <img src="assets/logo.png" alt="logo"> </li>
+                        <li> <a href="index.html" class="logoText quicksand-bold">SCHOOL</a> </li>
+                    </ul>
+                </div>
 
+                <p class="quicksand-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio ex
+                    nulla repellat fugiat necessitatibus atque minima perspiciatis, recusandae exercitationem!</p>
+            </div>
+
+            <div class="footerNav">
+                <h2 class="quicksand-bold">About School</h2>
+                <ul>
+                    <li class="quicksand-regular">Home</li>
+                    <li class="quicksand-regular">About</li>
+                    <li class="quicksand-regular">Facilities</li>
+                    <li class="quicksand-regular">Admission</li>
+                </ul>
+            </div>
+
+            <div class="socialMedia">
+                <h2 class="quicksand-bold">Keep In Touch</h2>
+
+                <img src="assets/fb.png" alt="fb">
+                <img src="assets/dribble.png" alt="dribble">
+                <img src="assets/twitter.png" alt="x">
+                <img src="assets/google+.png" alt="google">
+            </div>
+        </div>
     </footer>
 </body>
 
