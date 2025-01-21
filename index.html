@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .quicksand-regular {
+            font-family: "Quicksand", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .quicksand-bold {
+            font-family: "Quicksand", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body{
+            background-color: #F7F7F7;
+        }
+
+        .navigation {
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+        }
+
+        .navigation ul {
+            display: flex;
+            list-style-type: none;
+            padding-left: 0px;
+            align-items: center;
+        }
+
+        .logoText {
+            font-size: 32px;
+            padding-left: 11px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            margin-right: 35px;
+        }
+
+        .navigation .contactLink {
+            margin-right: 0px;
+        }
+
+        .navigation .admissionLink {
+            margin-right: 0px;
+        }
+
+        .navButton {
+            color: #ffffff;
+            background-color: #FEA301;
+            padding: 10px 60px 10px 60px;
+            border-radius: 12px;
+        }
+
+        .navButton:hover {
+            color: #ffffff;
+            background-color: #01d4fe;
+        }
+
+        .homeLink {
+            color: #FEA301;
+        }
+
+        .aboutLink {
+            color: #01ACFD;
+        }
+
+        .facilitiesLink {
+            color: #05D4DF;
+        }
+
+        .admissionLink {
+            color: #5D58EF;
+        }
+
+        .orangeHighLight {
+            color: #FEA301;
+        }
+
+        .blueHighlight {
+            color: #01ACFD;
+        }
+
+        .hamburger{
+            height: 20px;
+            display: none;
+        }
+
+        /* Row style */
+        .row {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Above The Fold */
+
+        .aboveTheFold {
+            margin-top: 20px;
+        }
+
+        .aboveTheFold .row {
+            justify-content: space-between;
+        }
+
+        .aboveTheFold .leftside {
+            width: 50%;
+        }
+
+        .aboveTheFold .leftside p {
+            line-height: 25px;
+            margin-top: 24px;
+        }
+
+        .aboveTheFold .leftside .btn {
+            margin-top: 24px;
+        }
+
+        .btn {
+            border: none;
+            border-radius: 12px;
+            padding: 10px 47px 10px 47px;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .btn:hover {
+            background-color: #FEA301;
+            color: #ffffff;
+        }
+
+        .mainHeading {
+            font-size: 56px;
+            line-height: 61px;
+        }
+
+        .herobanner {
+            width: 100%;
+        }
+
+        /* Curriculam section */
+
+        .curriculum {
+            background-image: url(assets/bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .headingContainer {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 80px;
+        }
+
+        .headingh2 {
+            font-size: 36px;
+        }
+
+        .curriculum .row {
+            gap: 28px;
+        }
+
+        .cardcc {
+            border-radius: 18px;
+            text-align: center;
+            padding: 53px 40px 53px 40px;
+        }
+
+        .cardccHeading{
+            margin-top: 37px;
+        }
+
+        .cardcc p {
+            margin-top: 33px;
+            font-size: 15px;
+            line-height: 25px;
+            color: #808080;
+        }
+
+        .cardcc .btn {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 0px;
+            margin-top: 38px;
+        }
+
+        .cardcc img {
+            height: 132px;
+        }
+
+        .BlueCard {
+            background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+            border: 1px solid rgb(222, 245, 255);
+        }
+
+        .BlueCard .btn {
+            color: #64C8FF;
+        }
+
+        .YellowCard {
+            background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+            border: 1px solid rgb(255, 244, 220);
+        }
+
+        .YellowCard .btn {
+            color: #F0AA00;
+        }
+
+        .PurpleCard {
+            background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+            border: 1px solid rgb(242, 232, 255);
+        }
+
+        .PurpleCard .btn {
+            color: #8700FF;
+        }
+
+        .sliderButtonContainer {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+
+        .sliderButtonContainer button {
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 15px 10px 15px;
+            background-color: #FEA301;
+            border-radius: 50%;
+            border: none;
+        }
+
+
+        @media screen and (max-width: 576px) {
+            nav {
+                border-bottom: 1px solid #FEA301;
+                padding: 0px 10px 0px 10px; 
+            }
+
+            .navigation {
+                margin: 0px;
+                width: 100%;
+            }
+
+            .navigation .logoText,
+            .homeLink,
+            .aboutLink,
+            .facilitiesLink,
+            .admissionLink,
+            .contactLink {
+                display: none;
+            }
+
+            .hamburger{
+                display: inline;
+                padding-right: 10px;
+            }
+            .aboveTheFold{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .aboveTheFold .row {
+                text-align: center;
+                flex-direction: column-reverse;
+                width: 100%;
+            }
+
+            .mainHeading {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            .curriculum {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .curriculum .row{
+                width: 100%;
+            }
+
+            .curriculum .row {
+                flex-direction: column;
+            }
+
+            .sliderButtonContainer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <div>
+                    <ul>
+                        <li> <img src="assets/logo.png" alt="logo"> </li>
+                        <li> <a href="index.html" class="logoText quicksand-bold">SCHOOL</a> </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li> <a href="#" class="quicksand-bold homeLink">Home</a> </li>
+                        <li> <a href="#" class="quicksand-regular aboutLink">About</a> </li>
+                        <li> <a href="#" class="quicksand-regular facilitiesLink">Facilities</a> </li>
+                        <li> <a href="#" class="quicksand-regular admissionLink">Admission</a> </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li> <a href="#" class="navButton quicksand-regular contactLink">Contact</a> </li>
+                        <li> <img src="assets/hamburger.png" alt="hamburger" class="hamburger"> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="aboveTheFold">
+            <div class="row">
+                <div class="leftside">
+
+                    <h1 class="mainHeading quicksand-bold"> <span class="orangeHighLight">Empowering</span> students
+                        from small age
+                        <span class="blueHighlight">towards vision</span>
+                    </h1>
+                    <p class="quicksand-regular">With the courage, Confidence, Creativity and Compassion to make their
+                        Unique Contribution in a
+                        Diverse and Dynamic World.</p>
+                    <button class="btn quicksand-bold">Enroll Now</button>
+                </div>
+
+                <div class="rightside">
+                    <img class="herobanner" src="assets/hero-kids.png" alt="herobanner">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="curriculum">
+            <div class="headingContainer">
+                <h2 class="quicksand-bold headingh2">Standard Curriculum</h2>
+            </div>
+            <div class="row">
+                <div class="cardcc BlueCard">
+                    <img src="assets/kinder.png" alt="kinder">
+                    <h3 class="quicksand-bold cardccHeading">Kinder (3-6) Years</h3>
+                    <p class="quicksand-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                        voluptates sed excepturi quis rerum vel earum, ipsa adipisci perferendis totam.</p>
+                    <button class="btn quicksand-bold">Read More</button>
+                </div>
+
+                <div class="cardcc YellowCard">
+                    <img src="assets/elementary.png" alt="kinder">
+                    <h3 class="quicksand-bold cardccHeading">Elementary School</h3>
+                    <p class="quicksand-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                        voluptates sed excepturi quis rerum vel earum, ipsa adipisci perferendis totam.</p>
+                    <button class="btn quicksand-bold">Read More</button>
+                </div>
+
+                <div class="cardcc PurpleCard">
+                    <img src="assets/middle.png" alt="kinder">
+                    <h3 class="quicksand-bold cardccHeading">Middle (10-16) Years</h3>
+                    <p class="quicksand-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                        voluptates sed excepturi quis rerum vel earum, ipsa adipisci perferendis totam.</p>
+                    <button class="btn quicksand-bold">Read More</button>
+                </div>
+            </div>
+
+            <div class="sliderButtonContainer">
+                <div>
+                    <button>
+                        < </button>
+                            <button> > </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
