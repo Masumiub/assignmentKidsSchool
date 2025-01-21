@@ -28,7 +28,7 @@
             font-style: normal;
         }
 
-        body{
+        body {
             background-color: #F7F7F7;
         }
 
@@ -104,7 +104,7 @@
             color: #01ACFD;
         }
 
-        .hamburger{
+        .hamburger {
             height: 20px;
             display: none;
         }
@@ -192,7 +192,7 @@
             padding: 53px 40px 53px 40px;
         }
 
-        .cardccHeading{
+        .cardccHeading {
             margin-top: 37px;
         }
 
@@ -256,49 +256,75 @@
             border: none;
         }
 
-        .storyCard{
+        .storyCard {
             display: flex;
             flex-direction: column;
-            
+
         }
-        .storyImg{
+
+        .storyImg {
             border-radius: 16px 16px 0px 0px;
             width: 100%;
         }
 
-        .storyContentContainer{
+        .storyContentContainer {
             margin-top: -4px;
             background-color: #ffffff;
-            border-radius: 0px 0px 16px 0px;
+            border-radius: 0px 0px 16px 16px;
             padding: 34px 38px 34px 38px;
         }
 
-        .storyContentContainer .btn{
+        .storyContentContainer h2 {
+            margin-top: 36px;
+            font-size: 24px;
+            line-height: 38px;
+        }
+
+        .storyContentContainer h3 {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+
+        .storyContentContainer p {
+            margin-top: 50px;
+            color: #666666;
+            font-size: 15px;
+            line-height: 28px;
+        }
+
+        .storyContentContainer .btn {
             border-radius: 90px;
             margin-top: -50px;
             position: absolute;
         }
 
-        .stories .row .leftside{
+        .stories .row {
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .stories .row .leftside {
             width: 50%;
         }
 
-        .stories .row .rightside{
+        .stories .row .rightside {
             width: 50%;
         }
 
 
-        .stories .row .rightside{
+        .stories .row .rightside {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+            gap: 20px;
         }
 
 
         @media screen and (max-width: 576px) {
             nav {
                 border-bottom: 1px solid #FEA301;
-                padding: 0px 10px 0px 10px; 
+                padding: 0px 10px 0px 10px;
             }
 
             .navigation {
@@ -315,11 +341,12 @@
                 display: none;
             }
 
-            .hamburger{
+            .hamburger {
                 display: inline;
                 padding-right: 10px;
             }
-            .aboveTheFold{
+
+            .aboveTheFold {
                 padding-left: 10px;
                 padding-right: 10px;
             }
@@ -339,7 +366,8 @@
                 padding-left: 20px;
                 padding-right: 20px;
             }
-            .curriculum .row{
+
+            .curriculum .row {
                 width: 100%;
             }
 
@@ -349,6 +377,17 @@
 
             .sliderButtonContainer {
                 display: none;
+            }
+
+            .stories .row .leftside {
+                display: none;
+            }
+
+            .stories .row .rightside {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
             }
         }
     </style>
@@ -436,8 +475,9 @@
 
             <div class="sliderButtonContainer">
                 <div>
-                    <button> < </button>
-                    <button> > </button>
+                    <button>
+                        < </button>
+                            <button> > </button>
                 </div>
             </div>
 
@@ -456,7 +496,9 @@
 
                             <h2 class="quicksand-bold">A fun toddler coloring training on classroom</h2>
 
-                            <p class="quicksand-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum natus nihil amet omnis iste enim voluptas in fuga, expedita fugiat harum eligendi quidem sed!</p>
+                            <p class="quicksand-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                                voluptatum natus nihil amet omnis iste enim voluptas in fuga, expedita fugiat harum
+                                eligendi quidem sed!</p>
                         </div>
                     </div>
                 </div>
@@ -469,7 +511,7 @@
                         <div class="storyContentContainer">
                             <button class="btn quicksand-regular">November 19, 2019</button>
 
-                            <h2 class="quicksand-bold">Find out if a school fits the family’s needs</h2>
+                            <h3 class="quicksand-bold">Find out if a school fits the family’s needs</h3>
                         </div>
                     </div>
 
@@ -480,7 +522,7 @@
                         <div class="storyContentContainer">
                             <button class="btn quicksand-regular">November 19, 2019</button>
 
-                            <h2 class="quicksand-bold">Summer math & literacy centres for kids</h2>
+                            <h3 class="quicksand-bold">Summer math & literacy centres for kids</h3>
                         </div>
                     </div>
 
@@ -492,7 +534,7 @@
                         <div class="storyContentContainer">
                             <button class="btn quicksand-regular">November 19, 2019</button>
 
-                            <h2 class="quicksand-bold">Classroom management techniques for new tutors</h2>
+                            <h3 class="quicksand-bold">Classroom management techniques for new tutors</h3>
                         </div>
                     </div>
 
@@ -503,7 +545,7 @@
                         <div class="storyContentContainer">
                             <button class="btn quicksand-regular">November 19, 2019</button>
 
-                            <h2 class="quicksand-bold">A fun toddler coloring training on classroom</h2>
+                            <h3 class="quicksand-bold">Conversation rhymes improve kids listening</h3>
                         </div>
                     </div>
 
