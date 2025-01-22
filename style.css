@@ -1,0 +1,678 @@
+
+* {
+    margin: 0;
+}
+
+.quicksand-regular {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicksand-bold {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+.navigation {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    align-items: center;
+}
+
+.logoText {
+    color: #000000;
+    font-size: 32px;
+    padding-left: 11px;
+}
+
+.navigation a {
+    text-decoration: none;
+    margin-right: 35px;
+}
+
+.navigation .contactLink {
+    margin-right: 0px;
+}
+
+.navigation .admissionLink {
+    margin-right: 0px;
+}
+
+.navButton {
+    color: #ffffff;
+    background-color: #FEA301;
+    padding: 10px 60px 10px 60px;
+    border-radius: 12px;
+}
+
+.navButton:hover {
+    color: #ffffff;
+    background-color: #01d4fe;
+}
+
+.homeLink {
+    color: #FEA301;
+}
+
+.aboutLink {
+    color: #01ACFD;
+}
+
+.facilitiesLink {
+    color: #05D4DF;
+}
+
+.admissionLink {
+    color: #5D58EF;
+}
+
+.orangeHighLight {
+    color: #FEA301;
+}
+
+.blueHighlight {
+    color: #01ACFD;
+}
+
+.hamburger {
+    height: 20px;
+    display: none;
+}
+
+.homeLink:hover,
+    .aboutLink:hover,
+    .facilitiesLink:hover,
+    .admissionLink:hover {
+        color:#FEA301;
+}
+
+.notice{
+    background-color: #e7f7fd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Row style */
+.row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Above The Fold */
+
+.aboveTheFold {
+    margin-top: 20px;
+}
+
+.aboveTheFold .row {
+    justify-content: space-between;
+}
+
+.aboveTheFold .leftside {
+    width: 50%;
+}
+
+.aboveTheFold .leftside p {
+    line-height: 25px;
+    margin-top: 24px;
+}
+
+.aboveTheFold .leftside .btn {
+    margin-top: 24px;
+}
+
+.btn {
+    border: none;
+    border-radius: 12px;
+    padding: 10px 47px 10px 47px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #FEA301;
+    color: #ffffff;
+}
+
+.mainHeading {
+    font-size: 56px;
+    line-height: 61px;
+}
+
+.herobanner {
+    width: 100%;
+}
+
+/* Curriculam section */
+
+.curriculum {
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headingContainer {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.headingh2 {
+    font-size: 36px;
+}
+
+.curriculum .row {
+    gap: 28px;
+    align-items: stretch;
+}
+
+.cardcc {
+    border-radius: 18px;
+    text-align: center;
+    padding: 53px 40px 53px 40px;
+}
+
+.cardccHeading {
+    margin-top: 37px;
+}
+
+.cardcc p {
+    margin-top: 33px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #808080;
+}
+
+.cardcc .btn {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0px;
+    margin-top: 38px;
+}
+
+.cardcc img {
+    height: 132px;
+}
+
+.BlueCard {
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    border: 1px solid rgb(222, 245, 255);
+}
+
+.BlueCard .btn {
+    color: #64C8FF;
+}
+
+.BlueCard .btn:hover {
+    color:#5D58EF;
+}
+
+.YellowCard {
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    border: 1px solid rgb(255, 244, 220);
+}
+
+.YellowCard .btn {
+    color: #F0AA00;
+}
+
+.YellowCard .btn:hover {
+    color:#5D58EF;
+}
+
+.PurpleCard {
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    border: 1px solid rgb(242, 232, 255);
+}
+
+.PurpleCard .btn {
+    color: #8700FF;
+}
+
+.PurpleCard .btn:hover {
+    color: #F0AA00;
+}
+
+.sliderButtonContainer {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.sliderButtonContainer button {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 18px 10px 18px;
+    background-color: #FEA301;
+    border-radius: 50%;
+    border: none;
+}
+
+.prevBtn:hover, .nextBtn:hover{
+    background-color: #01ACFD;
+}
+
+/* Stories Section */
+
+.stories {
+    background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+
+.storyCard {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.storyImg {
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+}
+
+.storyContentContainer {
+    margin-top: -4px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 16px 16px;
+    padding: 34px 38px 34px 38px;
+}
+
+.storyContentContainer h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.storyContentContainer h3 {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+.storyContentContainer p {
+    margin-top: 30px;
+    color: #666666;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.storyContentContainer .btn {
+    border-radius: 90px;
+    margin-top: -50px;
+    position: absolute;
+    padding: 10px 15px 10px 15px;
+}
+
+.btnBlue{
+    background-color: #3CD8E8;
+}
+
+.btnGreen{
+    background-color: #95B226;
+}
+
+.btnPurple{
+    background-color: #5D58F0;
+}
+
+.stories .row {
+    gap: 20px;
+    align-items: start;
+    padding-bottom: 90px;
+}
+
+.stories .row .leftside {
+    width: 50%;
+    /* height: 80vh; */
+}
+
+.stories .row .rightside {
+    width: 50%;
+    /* height: 80vh; */
+}
+
+
+.stories .row .rightside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.btnContainer {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #01ACFD;
+}
+
+footer .row {
+    align-items: start;
+    justify-content: space-between;
+    gap: 140px;
+    padding-top: 120px;
+    padding-bottom: 170px;
+}
+
+.row .footerDetails,
+.footerNav,
+.socialMedia {
+    width: 33.3%;
+    color: #ffffff;
+}
+
+.footerNav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footerNav ul li {
+    margin-bottom: 10px;
+}
+
+footer h2 {
+    margin-bottom: 32px;
+}
+
+.footerDetails ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+
+.footerDetails ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    nav {
+        border-bottom: 1px solid #FEA301;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .navigation {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .navigation .logoText,
+    .homeLink,
+    .aboutLink,
+    .facilitiesLink,
+    .admissionLink,
+    .contactLink {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+        padding-right: 10px;
+    }
+
+    .aboveTheFold {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .aboveTheFold .row {
+        text-align: center;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .aboveTheFold .leftside {
+        width: 100%;
+    }
+
+    .mainHeading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .curriculum {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .curriculum .row {
+        width: 100%;
+    }
+
+    .curriculum .row {
+        flex-direction: column;
+    }
+
+    .sliderButtonContainer {
+        display: none;
+    }
+
+    .stories {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .stories .row {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .stories .row .leftside {
+        display: none;
+    }
+
+    .stories .row .rightside {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .storyContentContainer {
+        margin-top: -4px;
+        background-color: #ffffff;
+        border-radius: 0px 0px 16px 16px;
+        padding: 17px 17px 17px 17px;
+    }
+
+    .storyContentContainer h3 {
+        margin-top: 15px;
+        font-size: 9px;
+        line-height: 15px;
+    }
+
+    .storyContentContainer .btn {
+        margin-top: -30px;
+        font-size: 9px;
+    }
+
+    footer .row {
+        flex-direction: column;
+        width: 100%;
+        gap: 32px;
+    }
+
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .row .footerDetails,
+    .footerNav,
+    .socialMedia {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    nav {
+        border-bottom: 1px solid #FEA301;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .navigation {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .navigation .logoText,
+    .homeLink,
+    .aboutLink,
+    .facilitiesLink,
+    .admissionLink,
+    .contactLink {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+        padding-right: 10px;
+    }
+
+    .aboveTheFold{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .aboveTheFold .row{
+        width: 100%;
+    }
+
+    .mainHeading {
+        font-size: 46px;
+        line-height: 61px;
+    }
+
+    .curriculum {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .curriculum .row{
+        align-items: stretch;
+        gap:5px;
+    }
+
+    .stories{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .stories .row{
+        width: 100%;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .stories .row .rightside{
+        width: 100%;
+        gap: 10px;
+    }
+
+    footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer .row{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    nav {
+        border-bottom: 1px solid #FEA301;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .navigation {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .navigation .logoText,
+    .homeLink,
+    .aboutLink,
+    .facilitiesLink,
+    .admissionLink,
+    .contactLink {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+        padding-right: 10px;
+    }
+
+    .aboveTheFold{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .aboveTheFold .row{
+        width: 100%;
+    }
+
+    .mainHeading {
+        font-size: 46px;
+        line-height: 61px;
+    }
+
+    .curriculum .row{
+        align-items: stretch;
+    }
+
+    .stories{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .stories .row{
+        width: 100%;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .stories .row .rightside{
+        width: 100%;
+        gap: 10px;
+    }
+
+    footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer .row{
+        width: 100%;
+    }
+}
