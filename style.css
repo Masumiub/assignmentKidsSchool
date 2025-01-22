@@ -377,15 +377,18 @@ footer {
 footer .row {
     align-items: start;
     justify-content: space-between;
-    gap: 140px;
+    gap: 135px;
     padding-top: 120px;
     padding-bottom: 170px;
 }
 
-.row .footerDetails,
-.footerNav,
+.row .footerDetails{
+    width: 50%;
+    color: #ffffff;
+}
+.row .footerNav,
 .socialMedia {
-    width: 33.3%;
+    width: 25%;
     color: #ffffff;
 }
 
@@ -574,13 +577,13 @@ footer h2 {
         line-height: 61px;
     }
 
-    .curriculum {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
     .curriculum .row{
         align-items: stretch;
         gap:5px;
+    }
+
+    .curriculum img{
+        height: 55px;
     }
 
     .stories{
@@ -605,6 +608,10 @@ footer h2 {
     }
 
     footer .row{
+        flex-direction: column;
+    }
+
+    .row .footerDetails, .footerNav .socialMedia{
         width: 100%;
     }
 }
